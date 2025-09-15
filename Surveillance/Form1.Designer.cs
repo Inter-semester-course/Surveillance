@@ -41,6 +41,7 @@
             this.chargerBtn.TabIndex = 0;
             this.chargerBtn.Text = "Charger";
             this.chargerBtn.UseVisualStyleBackColor = true;
+            this.chargerBtn.Click += new System.EventHandler(this.chargerBtn_Click);
             // 
             // txt
             // 

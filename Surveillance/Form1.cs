@@ -16,5 +16,19 @@ namespace Surveillance
         {
             InitializeComponent();
         }
+
+        private void chargerBtn_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.ShowDialog();
+
+            if(folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                string chemin = folderBrowserDialog.SelectedPath;
+                txt.Text = chemin;
+
+
+            }
+        }
     }
 }
