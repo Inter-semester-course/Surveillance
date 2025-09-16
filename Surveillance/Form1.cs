@@ -20,9 +20,23 @@ namespace Surveillance
             treeView1.AfterSelect += treeView1_AfterSelect;
 
             comboBox1.SelectedIndex = 0;
+
+            listView1.View = View.Details;
+            listView1.Columns.Add("Date/Heure", 150);
+            listView1.Columns.Add("Événement", 400);
         }
 
-        
+
+        private void AjouterLog(string message)
+        {
+            string date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            ListViewItem item = new ListViewItem(date);
+            item.SubItems.Add(message);
+            listView1.Items.Add(item);
+
+            listView1.EnsureVisible(listView1.Items.Count - 1);
+        }
+
         private void chargerBtn_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
@@ -41,7 +55,11 @@ namespace Surveillance
                 ChargerDossier(chemin, rootNode);
                 rootNode.Expand();
 
+                fileSystemWatcher1.Path = chemin;
+                fileSystemWatcher1.IncludeSubdirectories = true;
+                fileSystemWatcher1.EnableRaisingEvents = true;
             }
+
         }
 
         private void ChargerDossierFiltrer(string chemin, TreeNode parentNode, string filtre)
@@ -160,23 +178,23 @@ namespace Surveillance
 
         private void fileSystemWatcher1_Changed(object sender, System.IO.FileSystemEventArgs e)
         {
-            MessageBox.Show($"Changed: {e.Name}");
 
+            AjouterLog($"Fichier modifié : {e.Name}");
         }
 
         private void fileSystemWatcher1_Created(object sender, System.IO.FileSystemEventArgs e)
         {
-            MessageBox.Show($"Created: {e.Name}");
+            AjouterLog($"Fichier créé : {e.Name}");
         }
 
         private void fileSystemWatcher1_Deleted(object sender, System.IO.FileSystemEventArgs e)
         {
-            MessageBox.Show($"Deleted: {e.Name}");
+            AjouterLog($"Fichier supprimé : {e.Name}");
         }
 
         private void fileSystemWatcher1_Renamed(object sender, System.IO.RenamedEventArgs e)
         {
-            MessageBox.Show($"Renamed: {e.OldName} --> {e.Name}");
+            AjouterLog($"Fichier renommé : {e.OldName} → {e.Name}");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

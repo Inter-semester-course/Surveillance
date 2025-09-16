@@ -34,6 +34,7 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.folderControll1 = new Surveillance.folderControll();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,11 +103,21 @@
             this.comboBox1.Text = "Appliquez un filtre";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(347, 312);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(445, 226);
+            this.listView1.TabIndex = 7;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 550);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.folderControll1);
             this.Controls.Add(this.treeView1);
@@ -129,6 +140,7 @@
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ComboBox comboBox1;
         private folderControll folderControll1;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
