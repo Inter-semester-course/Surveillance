@@ -117,26 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="document" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dossier" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dossier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fichier_pdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fichier-pdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fichier_zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fichier-zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="film" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\film.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="musique_alt__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\musique-alt (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="icon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAdcAAAHXAYySCGgAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAEGklEQVR4Xu3bTehUVRjH8X+irQRNIUxEQapFFu5CQkPNt5QoFDUS9yWERK40VAQRxFW+K0SLQFIj
+        aRGmUCBpiyBILVMoCOnFqBaagprp9ycVw8Pzn7nn3HvOuQPzg89mmHueMw/zcu+Zc4ci8yDmYzfO4DJu
+        4m6gG/gVX+AgVuNhtDZ64a/jCrwX1ITb+BjP4wG0JtNxCd6kU/kSM1A8L+EavEmmdgc7MApFos+63pbe
+        5HL6HOOQNY/jT3gTkqt4H2/gFSwP9Bq8cYfzDR5BtpyENxG9I7ZhDOrGG7+bC8jShAXwJvAXFqKpeDV2
+        4QfzWKcsTTgBW/gfLEOTsTVEH4/RONbxmJW0CWNxC7boB2g6toaoAcoI7If3HEnWhJXwCj6NpuPV+a8B
+        ik6G9sF7niRpwluwhX5CijMzW0c6G6CobtZ3wh7YIp8iRWwdsQ1Q1ARde3jPl4uYiEai33Zb4ChSxNYR
+        rwFKlXfCBNTOYdjB9ViK2DoyXAOULE1ocwOUXh+Hs3gI0Wl7AxQ14QC840WX1HpOVPqhAUqvJryJqORs
+        gM4ubS2dh1SNmvAO7Bii0/bJCE7OBvwGW2srQqK1guEu3N5FcHI24BRsLV1mh5516pvfu3TXKf0UBCVn
+        A9bB1hJdcmsRRHWr+h7eWJsRFA1mB9FjKaI1hd9h6zVJ5wZBydkAZQW8L8MmTULl5G6AshZ/w9ZtStWf
+        1vsp0QBlDr6Grd0EXeFWTqkGKFoEeQaboN931Q3lfafsReVoEDuAHuuX6DTYzv89VE6/N6D2/AcNQK0B
+        CmfQANSa/6ABqDVA4RRtwBNYCp15NUlj6s/aKinWgJ2wxzVJ1wtb0CtFGvAk7DEpqAmPoVuKNGAx7DGp
+        6J/rbinSAO3uyrGN5g/0WvIu0gBlEc4hxWWtxvwKM9ErxRrQlgwagFrzHzQAtQYonEEDUGv+sQOMh9bg
+        D0HPD6FjtAzWxGZIjRcz//8TM4A2Un8Le1yo86i7LbZIA7Sia4+J9SzqpEgDZsMeE2sW6qRIA/S21V5e
+        e1wonUkW/wjEbpLSF5i+yGK/BDei1taWf6O52vnrNVWOt//mM/RLvL/ctVZRORtgB/gZ0XtuMkb/LP0C
+        O//1qBz9W2sHkBRbZZuObrHx5q5ltcrRf/beXWAfou35CHbe2iWiDeBB8bbLS1AnM+dleHM+juDoXiFv
+        sOvQLW1tyxLoPkRvznMRlU/gDajVme0IflsliH42dVeZ7i7z5qp/iqPzKLQG5w0sWgM8Am1IXIXOdfyU
+        VEs19XvfbR1S+wSmolZ0Xh5zW2xp2mUW/da3eRGlbpyMoX2GL6DRPIXv4BVsE12ST0OS6CJlDXTHt1e8
+        JJ39vYqRSB41Yh50fn0aPyLn94RqqaZqv43nEPHCh4buAdtfeF6O5gGyAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

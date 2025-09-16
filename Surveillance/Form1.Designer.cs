@@ -32,13 +32,15 @@
             this.txt = new System.Windows.Forms.TextBox();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.folderControll1 = new Surveillance.folderControll();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // chargerBtn
             // 
             this.chargerBtn.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chargerBtn.Location = new System.Drawing.Point(43, 25);
+            this.chargerBtn.Location = new System.Drawing.Point(87, 22);
             this.chargerBtn.Name = "chargerBtn";
             this.chargerBtn.Size = new System.Drawing.Size(144, 31);
             this.chargerBtn.TabIndex = 0;
@@ -48,9 +50,9 @@
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(251, 32);
+            this.txt.Location = new System.Drawing.Point(295, 29);
             this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(357, 20);
+            this.txt.Size = new System.Drawing.Size(435, 20);
             this.txt.TabIndex = 3;
             // 
             // fileSystemWatcher1
@@ -64,16 +66,49 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(12, 83);
+            this.treeView1.Location = new System.Drawing.Point(12, 111);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(303, 455);
+            this.treeView1.Size = new System.Drawing.Size(303, 427);
             this.treeView1.TabIndex = 4;
+            // 
+            // folderControll1
+            // 
+            this.folderControll1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.folderControll1.DateCreation = null;
+            this.folderControll1.FolderChemin = null;
+            this.folderControll1.FolderIcon = null;
+            this.folderControll1.FolderName = null;
+            this.folderControll1.Location = new System.Drawing.Point(347, 83);
+            this.folderControll1.Name = "folderControll1";
+            this.folderControll1.Size = new System.Drawing.Size(445, 222);
+            this.folderControll1.TabIndex = 5;
+            this.folderControll1.Taille = null;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tous",
+            ".pdf",
+            ".txt",
+            ".jpg",
+            ".pnj",
+            ".mp4",
+            ".mp3"});
+            this.comboBox1.Location = new System.Drawing.Point(12, 84);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(303, 21);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.Text = "Appliquez un filtre";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 550);
+            this.ClientSize = new System.Drawing.Size(814, 550);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.folderControll1);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.chargerBtn);
@@ -92,6 +127,8 @@
         private System.Windows.Forms.TextBox txt;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private folderControll folderControll1;
     }
 }
 
